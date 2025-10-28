@@ -1,0 +1,222 @@
+
+body, html {
+
+    font-size: 16px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    }
+
+.navbar {
+  position: relative;
+  background-color: #ff7f50;
+  width: 100%;
+ }
+
+ .navdiv {
+  display: flex;
+  align-items: center;
+  }
+
+
+ li {
+list-style: none;
+display: inline-block;
+  padding: 0 10px;
+  font-weight: bold;
+  }
+
+li a {
+  color: #000000;
+  font-weight: bold;
+  }
+
+
+  .mission h1 {
+   text-align: center;
+   font-size: 5rem;
+}
+
+.mission h2{
+   text-align: center;
+   font-size: 2rem;
+   color: #006400;
+ }
+
+
+.main-container  {
+    box-sizing: border-box;
+    width: 100%;
+    
+    background-image: url(./holidayimages/3863926.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+        }
+
+.main {
+  display: flex;
+justify-content: center;
+}
+
+.main p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.holiday-packages {
+    display: flex;
+   gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.package {
+  flex: 1 1 100%;
+  max-width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+}
+
+.package img {
+  width: 300px;
+  height: 250px;
+  max-width: 100%;
+}
+
+ .team-title {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 2.5em; 
+  }
+
+.team-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-image: url(./holidayimages/Lower_Manhattan0.jpg);
+      justify-content: center;
+      background-repeat: no-repeat;
+      gap: 2rem;
+      
+      }
+
+.team {
+      display: flex;
+      flex-direction: column;
+       box-sizing: border-box;
+      flex: 1 1 100%;
+      max-width: 250px;
+      text-align: center;
+      align-items: center;
+      padding-top: 2rem;
+      color: #ffebcd;
+      }
+
+.team img {
+      height: 450px;
+      width: 250px;
+      max-width: 100%;
+      object-fit: cover;
+      }
+
+
+      .footer {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+
+      .footer-title {
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      /* Small screens: default styles (mobile first) */
+/* No media query needed for base styles */
+
+/* 
+
+/* Large screens: desktops and up */
+@media (min-width: 900px) {
+  .main-container {
+    background-size: 100% 400px;
+    
+  }
+ .holiday-packages {
+   margin-top: 22rem;
+    justify-content: space-around;
+  }
+ 
+ .package {
+    flex: 1 1 30%;
+    max-width: 30%;
+    font-size: 1.5rem;
+   
+  }
+  .team-title {
+   
+    font-size: 2.5em;
+  }
+  .team-container {
+    gap: 2rem;
+    
+    
+  }
+}
+
+@media (max-width: 600px) {
+  
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .package,
+  .team {
+    max-width: 90%;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .team-title {
+    font-size: 1.5em;
+    margin-top: 1.5rem;
+  }
+  .holiday-packages {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 22rem;
+  }
+  }
+
+  @media (min-width: 600px) and (max-width: 900px) {
+  .main-container {
+    background-size: 100% 400px;
+    
+  }
+ .holiday-packages {
+   margin-top: 22rem;
+    justify-content: space-around;
+  }
+ 
+ .package {
+    flex: 1 1 30%;
+    max-width: 30%;
+    
+   
+  }
+  .team-title {
+   
+    font-size: 2.5em;
+  }
+  .team-container {
+    gap: 2rem;
+    
+    
+  }
+}
+
+
+
+
+
